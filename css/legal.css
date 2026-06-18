@@ -1,0 +1,110 @@
+/* ── Legal pages (ToS & Privacy) ── */
+
+.legal-page {
+  padding: 120px 0 80px;
+  min-height: 100vh;
+}
+
+.legal-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.legal-header {
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--lp-border-s);
+}
+
+.legal-title {
+  font-family: var(--lp-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--lp-cream);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 12px 0 10px;
+}
+
+.legal-date {
+  font-size: 0.83rem;
+  color: var(--lp-muted);
+}
+
+.legal-intro {
+  font-size: 1.05rem;
+  color: var(--lp-cream-dim);
+  line-height: 1.75;
+  margin-bottom: 40px;
+  padding: 24px 28px;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border-s);
+  border-left: 3px solid var(--lp-orange);
+  border-radius: 0 var(--lp-radius) var(--lp-radius) 0;
+}
+
+.legal-section {
+  margin-bottom: 40px;
+}
+
+.legal-section h2 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--lp-cream);
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--lp-border);
+}
+
+.legal-section p {
+  font-size: 0.93rem;
+  color: var(--lp-cream-dim);
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+.legal-section ul {
+  list-style: none;
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legal-section ul li {
+  font-size: 0.93rem;
+  color: var(--lp-cream-dim);
+  line-height: 1.65;
+  padding-left: 18px;
+  position: relative;
+}
+
+.legal-section ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--lp-muted);
+}
+
+.legal-section a {
+  color: var(--lp-orange);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.legal-section a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.legal-section strong {
+  color: var(--lp-cream);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .legal-page { padding: 96px 0 60px; }
+  .legal-intro { padding: 18px 20px; }
+}
