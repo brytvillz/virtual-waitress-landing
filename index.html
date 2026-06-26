@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Virtual Waitress — Digital Menus for African Restaurants</title>
-    <meta name="description" content="Give your restaurant a beautiful digital menu, live ordering, and instant waiter alerts — from a QR code at every table. No app download." />
-    <meta property="og:title" content="Virtual Waitress — Digital Menus for African Restaurants" />
-    <meta property="og:description" content="From paper menus to live digital ordering in one afternoon. Built for African restaurants." />
-    <meta property="og:image" content="images/hero-food.jpg" />
+    <title>Virtual Waitress — Digital Operations for Restaurants, Bars &amp; Lounges</title>
+    <meta name="description" content="Stop losing money to missed orders, paper menus, and guesswork. Virtual Waitress gives your venue a live digital menu, instant waiter alerts, and real business analytics — from a QR code at every table." />
+    <meta property="og:title" content="Virtual Waitress — Digital Operations for Restaurants, Bars &amp; Lounges" />
+    <meta property="og:description" content="Stop losing money to missed orders and guesswork. Built for African restaurants, bars, clubs, lounges and eateries." />
+    <meta property="og:image" content="images/hero-slide-5.jpg" />
     <link rel="canonical" href="https://virtualwaitress.com" />
     <meta property="og:url" content="https://virtualwaitress.com" />
     <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -26,6 +27,7 @@
           <span class="lp-logo-word">Virtual Waitress</span>
         </a>
         <div class="lp-nav-links">
+          <a href="#problem">Problems we solve</a>
           <a href="#how">How it works</a>
           <a href="#features">Features</a>
           <a href="#pricing">Pricing</a>
@@ -35,6 +37,7 @@
         <button class="lp-nav-hamburger" id="lpNavHamburger" aria-label="Open navigation">&#9776;</button>
       </div>
       <div class="lp-mobile-menu hidden" id="lpMobileMenu">
+        <a href="#problem">Problems we solve</a>
         <a href="#how">How it works</a>
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
@@ -43,216 +46,277 @@
       </div>
     </nav>
 
-    <!-- ── Hero ────────────────────────────────────────────────── -->
-    <section class="lp-hero" id="home">
-      <div class="lp-hero-glow"></div>
+    <!-- ── Hero Slider ────────────────────────────────────────── -->
+    <section class="lp-hero-slider" id="home">
+
+      <!-- Slide 1: Frustrated customer -->
+      <div class="hero-slide slide-1">
+        <div class="slide-bg" style="background-image:url('images/hero-slide-1.jpg')"></div>
+        <div class="slide-overlay overlay-left"></div>
+        <div class="slide-content content-left">
+          <div class="slide-eyebrow">For restaurants, bars, lounges &amp; eateries across Africa</div>
+          <h1 class="slide-headline">She's been waiting<br><em>15 minutes.</em></h1>
+          <p class="slide-sub">Her order is still in her head. Your waiter's hands are full. Somewhere between them, money walks out the door.</p>
+          <div class="slide-actions">
+            <a href="https://app.virtualwaitress.com/signup" class="lp-btn-primary">See how we fix it &rarr;</a>
+            <a href="https://app.virtualwaitress.com" class="lp-btn-ghost-slide" target="_blank" rel="noopener">Live demo &nearr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Overwhelmed waiter -->
+      <div class="hero-slide slide-2">
+        <div class="slide-bg" style="background-image:url('images/hero-slide-2.jpg')"></div>
+        <div class="slide-overlay overlay-right"></div>
+        <div class="slide-content content-right">
+          <div class="slide-eyebrow">Staff management &amp; live orders</div>
+          <h1 class="slide-headline">One waiter.<br>Eight tables.<br><em>Zero chance.</em></h1>
+          <p class="slide-sub">When your staff is stretched thin, orders get missed, guests get frustrated, and the reviews show it. We fix the system underneath.</p>
+          <div class="slide-actions">
+            <a href="https://app.virtualwaitress.com/signup" class="lp-btn-primary">Give your team a better system &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Owner with receipts -->
+      <div class="hero-slide slide-3">
+        <div class="slide-bg" style="background-image:url('images/hero-slide-3.jpg')"></div>
+        <div class="slide-overlay overlay-dark"></div>
+        <div class="slide-content content-center">
+          <div class="slide-eyebrow">Business analytics &amp; insights</div>
+          <h1 class="slide-headline">What actually sold<br><em>last night?</em></h1>
+          <p class="slide-sub">If your answer is paper slips and guesswork, you're running blind. Virtual Waitress gives you real numbers — best sellers, revenue, and staff performance — in real time.</p>
+          <div class="slide-actions slide-actions-center">
+            <a href="https://app.virtualwaitress.com/signup" class="lp-btn-primary">See your business clearly &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: QR scan -->
+      <div class="hero-slide slide-4">
+        <div class="slide-bg" style="background-image:url('images/hero-slide-4.jpg')"></div>
+        <div class="slide-overlay overlay-glass-left"></div>
+        <div class="slide-content content-left">
+          <div class="slide-eyebrow">Customer experience</div>
+          <h1 class="slide-headline">Scan. Browse.<br>Order. <em>Done.</em></h1>
+          <p class="slide-sub">No app. No printer. No confusion. Works on any phone at your restaurant, bar, club, lounge, or eatery — the moment a customer sits down.</p>
+          <div class="slide-actions">
+            <a href="https://app.virtualwaitress.com" class="lp-btn-primary" target="_blank" rel="noopener">Try the live demo &rarr;</a>
+            <a href="https://app.virtualwaitress.com/signup" class="lp-btn-ghost-slide">Get started free</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Analytics owner -->
+      <div class="hero-slide slide-5">
+        <div class="slide-bg" style="background-image:url('images/hero-slide-5.jpg')"></div>
+        <div class="slide-overlay overlay-left-warm"></div>
+        <div class="slide-content content-left">
+          <div class="slide-eyebrow slide-eyebrow-green"><span class="material-symbols-outlined" style="font-size:0.9rem;vertical-align:middle;margin-right:4px">check_circle</span> Real-time analytics &amp; performance</div>
+          <h1 class="slide-headline">Now you know<br>exactly <em>what's working.</em></h1>
+          <p class="slide-sub">Best sellers, waiter performance, daily revenue — all on one screen. Run your restaurant, bar, or lounge with data, not instinct.</p>
+          <div class="slide-actions">
+            <a href="https://app.virtualwaitress.com/signup" class="lp-btn-primary">Get started free &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation arrows -->
+      <button class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous slide">&#8249;</button>
+      <button class="hero-arrow hero-next" id="heroNext" aria-label="Next slide">&#8250;</button>
+
+      <!-- Dot indicators -->
+      <div class="hero-dots">
+        <button class="hero-dot" aria-label="Slide 1"></button>
+        <button class="hero-dot" aria-label="Slide 2"></button>
+        <button class="hero-dot" aria-label="Slide 3"></button>
+        <button class="hero-dot" aria-label="Slide 4"></button>
+        <button class="hero-dot" aria-label="Slide 5"></button>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="hero-progress-wrap">
+        <div class="hero-progress" id="heroProgress"></div>
+      </div>
+
+    </section>
+
+    <!-- ── Pain Section ───────────────────────────────────────── -->
+    <section class="lp-pain" id="problem">
       <div class="lp-container">
-        <div class="lp-hero-inner">
-
-          <div class="lp-hero-text">
-            <div class="lp-eyebrow">
-              <span class="lp-eyebrow-dot"></span>
-              Built for African restaurants
-            </div>
-            <h1 class="lp-hero-headline">
-              Your restaurant,<br />
-              <em>finally digital.</em>
-            </h1>
-            <p class="lp-hero-sub">
-              Give your customers a beautiful menu, live ordering, and instant waiter alerts — all from a QR code at the table. No app download. No wahala.
-            </p>
-            <div class="lp-hero-actions">
-              <a href="https://app.virtualwaitress.com/signup" class="lp-btn-primary">Get Your Restaurant Online &#8594;</a>
-              <a href="https://app.virtualwaitress.com" target="_blank" rel="noopener noreferrer" class="lp-btn-ghost">See Live Demo &#8599;</a>
-            </div>
-            <div class="lp-hero-trust">
-              <div class="lp-trust-item">
-                <span class="lp-trust-num">5 min</span>
-                <span class="lp-trust-label">to go live</span>
-              </div>
-              <div class="lp-trust-divider"></div>
-              <div class="lp-trust-item">
-                <span class="lp-trust-num">0</span>
-                <span class="lp-trust-label">paper menus</span>
-              </div>
-              <div class="lp-trust-divider"></div>
-              <div class="lp-trust-item">
-                <span class="lp-trust-num">Any phone</span>
-                <span class="lp-trust-label">no app needed</span>
-              </div>
-            </div>
+        <div class="lp-section-tag">Sound familiar?</div>
+        <h2 class="lp-section-headline reveal">Every night, the same problems.</h2>
+        <p class="lp-section-sub reveal">Restaurants, bars, clubs, and lounges across Africa lose money the same way. Here's what we see — and what we fix.</p>
+        <div class="lp-pain-grid">
+          <div class="lp-pain-card reveal">
+            <div class="lp-pain-num">01</div>
+            <h3>Customers raising hands, waiters nowhere to be found</h3>
+            <p>Guests wait 20 minutes to place a simple order. They get frustrated, they leave unhappy — and sometimes they just leave.</p>
           </div>
-
-          <div class="lp-hero-visual">
-            <div class="lp-phone-wrap">
-              <div class="lp-phone-glow"></div>
-              <div class="lp-phone">
-                <div class="lp-phone-notch"></div>
-                <div class="lp-phone-screen">
-                  <div class="lp-mock-hero-band">
-                    <div class="lp-mock-hero-info">
-                      <p class="lp-mock-restaurant-name">Nnewi Buka</p>
-                      <p class="lp-mock-tagline">Authentic Igbo Home Cooking</p>
-                    </div>
-                    <div class="lp-mock-table-badge">Table 3</div>
-                  </div>
-                  <div class="lp-mock-tabs">
-                    <div class="lp-mock-tab lp-mock-tab-active">Soups</div>
-                    <div class="lp-mock-tab">Rice</div>
-                    <div class="lp-mock-tab">Grills</div>
-                    <div class="lp-mock-tab">Drinks</div>
-                  </div>
-                  <div class="lp-mock-items">
-                    <div class="lp-mock-item">
-                      <div class="lp-mock-item-text">
-                        <div class="lp-mock-item-name">Egusi Soup</div>
-                        <div class="lp-mock-item-price">&#8358;1,500</div>
-                      </div>
-                      <button class="lp-mock-add-btn">+</button>
-                    </div>
-                    <div class="lp-mock-item">
-                      <div class="lp-mock-item-text">
-                        <div class="lp-mock-item-name">Ofe Onugbu</div>
-                        <div class="lp-mock-item-price">&#8358;1,500</div>
-                      </div>
-                      <button class="lp-mock-add-btn">+</button>
-                    </div>
-                    <div class="lp-mock-item lp-mock-item-selected">
-                      <div class="lp-mock-item-text">
-                        <div class="lp-mock-item-name">Ogbono Soup</div>
-                        <div class="lp-mock-item-price">&#8358;1,800</div>
-                      </div>
-                      <button class="lp-mock-add-btn lp-mock-add-active">2</button>
-                    </div>
-                    <div class="lp-mock-item">
-                      <div class="lp-mock-item-text">
-                        <div class="lp-mock-item-name">Oha Soup</div>
-                        <div class="lp-mock-item-price">&#8358;2,000</div>
-                      </div>
-                      <button class="lp-mock-add-btn">+</button>
-                    </div>
-                  </div>
-                  <div class="lp-mock-action-bar">
-                    <div class="lp-mock-call-btn">&#128242; Call Waiter</div>
-                    <div class="lp-mock-order-btn">&#128722; Place Order</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img src="images/ada.png" alt="Ada, your virtual waitress" class="lp-ada-float" />
+          <div class="lp-pain-card reveal">
+            <div class="lp-pain-num">02</div>
+            <h3>Orders written on paper, wrong items delivered every night</h3>
+            <p>Your waiter writes fast, the kitchen reads slow. Complaints follow. Refunds follow. Bad reviews follow.</p>
           </div>
-
+          <div class="lp-pain-card reveal">
+            <div class="lp-pain-num">03</div>
+            <h3>You don't know what's selling — or what's wasting</h3>
+            <p>End of week, you're guessing which dishes to restock. No data, no clarity, no control over your own numbers.</p>
+          </div>
+          <div class="lp-pain-card reveal">
+            <div class="lp-pain-num">04</div>
+            <h3>A dish runs out and four tables still order it</h3>
+            <p>Kitchen finishes the peppersoup at 8pm. Nobody tells the floor. Three tables order it. The kitchen rejects it. The table is angry.</p>
+          </div>
+          <div class="lp-pain-card reveal">
+            <div class="lp-pain-num">05</div>
+            <h3>No way to know which staff is performing — or who's coasting</h3>
+            <p>At the end of a busy shift, every waiter says they were working hard. You have no numbers to agree or disagree with.</p>
+          </div>
+          <div class="lp-pain-card reveal">
+            <div class="lp-pain-num">06</div>
+            <h3>Paper menus cost money, go dirty, and go out of date</h3>
+            <p>You reprint every season. Prices change, items sell out, new dishes get added. One laminated card can't keep up.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ── Problem ──────────────────────────────────────────────── -->
-    <section class="lp-problem" id="problem">
-      <div class="lp-container">
-        <div class="lp-section-tag">The old way</div>
-        <h2 class="lp-section-headline reveal">
-          Running on paper<br />and guesswork?
-        </h2>
-        <p class="lp-section-sub reveal">Every restaurant in Africa faces the same friction. Virtual Waitress eliminates it.</p>
-        <div class="lp-compare reveal">
-          <div class="lp-compare-col lp-compare-before">
-            <div class="lp-compare-label">Before</div>
-            <ul class="lp-compare-list">
-              <li>Printed menus that go missing, get dirty, or run out</li>
-              <li>Customers shout across the room just to get a waiter</li>
-              <li>Orders written on paper, misread, or forgotten</li>
-              <li>No way to know which table is waiting or what they ordered</li>
-              <li>Unhappy customers, slower service, lost revenue</li>
-            </ul>
-          </div>
-          <div class="lp-compare-divider">
-            <span class="lp-compare-arrow">&#8594;</span>
-          </div>
-          <div class="lp-compare-col lp-compare-after">
-            <div class="lp-compare-label lp-compare-label-after">After</div>
-            <ul class="lp-compare-list lp-compare-list-after">
-              <li>Beautiful digital menu, always current, never runs out</li>
-              <li>Customers tap a button — waiter notified in seconds</li>
-              <li>Orders go straight to the waiter dashboard, no mistakes</li>
-              <li>See every table's status in real time from one screen</li>
-              <li>Faster service, happier customers, more repeat business</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── How it works ─────────────────────────────────────────── -->
+    <!-- ── How it works ───────────────────────────────────────── -->
     <section class="lp-how" id="how">
       <div class="lp-container">
         <div class="lp-section-tag">Simple setup</div>
-        <h2 class="lp-section-headline reveal">From setup to first order<br />in under an hour</h2>
+        <h2 class="lp-section-headline reveal">From signup to first order<br />in under an hour</h2>
         <div class="lp-steps">
           <div class="lp-step reveal">
             <div class="lp-step-num-bg">01</div>
             <div class="lp-step-body">
-              <div class="lp-step-icon">&#127869;&#65039;</div>
-              <h3 class="lp-step-title">Add your menu</h3>
-              <p class="lp-step-desc">Upload your dishes, prices, and photos. Set which items are available today. Changes go live instantly.</p>
+              <span class="material-symbols-outlined lp-step-icon">menu_book</span>
+              <h3 class="lp-step-title">Sign up &amp; build your menu</h3>
+              <p class="lp-step-desc">Create your account, add your dishes, prices, and photos. Mark what's available today. Changes go live instantly — no reprinting, no waiting.</p>
             </div>
           </div>
           <div class="lp-step-line"></div>
           <div class="lp-step reveal">
             <div class="lp-step-num-bg">02</div>
             <div class="lp-step-body">
-              <div class="lp-step-icon">&#128279;</div>
-              <h3 class="lp-step-title">Print your QR codes</h3>
-              <p class="lp-step-desc">One QR code per table. We give you print-ready table cards. Place them and you're done.</p>
+              <span class="material-symbols-outlined lp-step-icon">qr_code_2</span>
+              <h3 class="lp-step-title">Print your QR table cards</h3>
+              <p class="lp-step-desc">One QR code per table. We generate print-ready table cards for you. Place them on every table and you're done — customers scan and your menu opens instantly.</p>
             </div>
           </div>
           <div class="lp-step-line"></div>
           <div class="lp-step reveal">
             <div class="lp-step-num-bg">03</div>
             <div class="lp-step-body">
-              <div class="lp-step-icon">&#9889;</div>
-              <h3 class="lp-step-title">Go live</h3>
-              <p class="lp-step-desc">Customers scan, browse, and order. Your waiters get live alerts. You see everything from the manager dashboard.</p>
+              <span class="material-symbols-outlined lp-step-icon">bolt</span>
+              <h3 class="lp-step-title">Go live — and stay in control</h3>
+              <p class="lp-step-desc">Customers scan, browse, and order. Waiters get live alerts. Your kitchen knows what's coming. You see revenue, best sellers, and staff performance from one dashboard.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── Features ─────────────────────────────────────────────── -->
+    <!-- ── Features ────────────────────────────────────────────── -->
     <section class="lp-features" id="features">
       <div class="lp-container">
         <div class="lp-section-tag">Everything included</div>
-        <h2 class="lp-section-headline reveal">Built for how restaurants<br />actually work</h2>
-        <div class="lp-feat-grid">
-          <div class="lp-feat reveal">
-            <div class="lp-feat-icon">&#128241;</div>
-            <h3 class="lp-feat-title">Works on any phone</h3>
-            <p class="lp-feat-desc">No app download. Customers scan the QR and the menu opens instantly in their browser — Android, iPhone, anything.</p>
+        <h2 class="lp-section-headline reveal">Built for how your venue<br />actually runs</h2>
+        <p class="lp-section-sub reveal">Not just a digital menu. A complete operations system — for your customers, your staff, and you.</p>
+
+        <div class="lp-feat-group">
+          <div class="lp-feat-group-label">For your customers</div>
+          <div class="lp-feat-grid">
+            <div class="lp-feat reveal">
+              <span class="material-symbols-outlined lp-feat-icon">smartphone</span>
+              <h3 class="lp-feat-title">Works on any phone, no app needed</h3>
+              <p class="lp-feat-desc">Scan the QR, the menu opens in the browser. Android, iPhone, budget phone — it works. No download. No friction.</p>
+            </div>
+            <div class="lp-feat reveal">
+              <span class="material-symbols-outlined lp-feat-icon">shopping_bag</span>
+              <h3 class="lp-feat-title">Order from the table, track it live</h3>
+              <p class="lp-feat-desc">Customers browse, add items, place their order — and then track its status from Pending to Preparing to Served, right on their phone.</p>
+            </div>
+            <div class="lp-feat reveal">
+              <span class="material-symbols-outlined lp-feat-icon">support_agent</span>
+              <h3 class="lp-feat-title">Call waiter — one tap</h3>
+              <p class="lp-feat-desc">No more waving. Customers tap "Call Waiter" and your staff gets an instant alert. Table number included. No confusion.</p>
+            </div>
           </div>
-          <div class="lp-feat reveal">
-            <div class="lp-feat-icon">&#9889;</div>
-            <h3 class="lp-feat-title">Live order dashboard</h3>
-            <p class="lp-feat-desc">Waiters see every incoming order in real time. Mark orders as received, preparing, and served from a simple screen.</p>
+        </div>
+
+        <div class="lp-feat-group">
+          <div class="lp-feat-group-label">For your staff</div>
+          <div class="lp-feat-grid">
+            <div class="lp-feat reveal">
+              <span class="material-symbols-outlined lp-feat-icon">bolt</span>
+              <h3 class="lp-feat-title">Live order queue for waiters</h3>
+              <p class="lp-feat-desc">Waiters see every incoming order in real time. One tap to mark Preparing. One tap to mark Served. No paper, no radio, no confusion.</p>
+            </div>
+            <div class="lp-feat reveal">
+              <span class="material-symbols-outlined lp-feat-icon">notifications_active</span>
+              <h3 class="lp-feat-title">Push notifications — even screen off</h3>
+              <p class="lp-feat-desc">New order? New waiter call? Your staff gets a push notification and an audio alert immediately — even when the screen is locked.</p>
+            </div>
+            <div class="lp-feat reveal">
+              <span class="material-symbols-outlined lp-feat-icon">do_not_disturb_on</span>
+              <h3 class="lp-feat-title">Mark items sold out from the floor</h3>
+              <p class="lp-feat-desc">Peppersoup just finished? Waiters toggle it sold out from their phone. It disappears from the customer menu instantly — no more awkward explanations.</p>
+            </div>
           </div>
-          <div class="lp-feat reveal">
-            <div class="lp-feat-icon">&#128276;</div>
-            <h3 class="lp-feat-title">Instant waiter alerts</h3>
-            <p class="lp-feat-desc">When a customer taps "Call Waiter," your staff gets a push notification immediately — even when the screen is off.</p>
+        </div>
+
+        <div class="lp-feat-group">
+          <div class="lp-feat-group-label">For you — the owner</div>
+          <div class="lp-feat-grid">
+            <div class="lp-feat reveal">
+              <span class="material-symbols-outlined lp-feat-icon">bar_chart</span>
+              <h3 class="lp-feat-title">Real analytics — revenue &amp; best sellers</h3>
+              <p class="lp-feat-desc">See today's orders, today's revenue, all-time totals, and your top 5 best-selling items by quantity and earnings. Know your business.</p>
+            </div>
+            <div class="lp-feat reveal">
+              <span class="material-symbols-outlined lp-feat-icon">groups</span>
+              <h3 class="lp-feat-title">Waiter performance tracking</h3>
+              <p class="lp-feat-desc">See how many orders each waiter handled today, their revenue, and their shift history. No more guessing who's pulling their weight.</p>
+            </div>
+            <div class="lp-feat reveal">
+              <span class="material-symbols-outlined lp-feat-icon">palette</span>
+              <h3 class="lp-feat-title">Your brand, your colours</h3>
+              <p class="lp-feat-desc">Set your restaurant name, tagline, accent colour, and food photos. The menu looks like it was built just for you — not a generic template.</p>
+            </div>
           </div>
-          <div class="lp-feat reveal">
-            <div class="lp-feat-icon">&#127978;</div>
-            <h3 class="lp-feat-title">Your brand, your menu</h3>
-            <p class="lp-feat-desc">Customised with your restaurant name, accent colour, and food photos. Looks like it was built just for you.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Who it's for ─────────────────────────────────────────── -->
+    <section class="lp-venues" id="venues">
+      <div class="lp-container">
+        <div class="lp-section-tag">Who it&#8217;s for</div>
+        <h2 class="lp-section-headline reveal">Any venue that serves food or drinks</h2>
+        <p class="lp-section-sub reveal">The same problems exist everywhere. So does the fix.</p>
+        <div class="lp-venue-grid">
+          <div class="lp-venue-card reveal" style="background-image:url('images/venue-1.png')">
+            <span class="material-symbols-outlined lp-venue-icon">restaurant</span>
+            <h3>Restaurants</h3>
+            <p>Full-service dining, local eateries, fast-casual. Replace paper menus, speed up service, track what sells.</p>
           </div>
-          <div class="lp-feat reveal">
-            <div class="lp-feat-icon">&#127758;</div>
-            <h3 class="lp-feat-title">Offline-ready</h3>
-            <p class="lp-feat-desc">The menu works even with a weak signal. Built as a Progressive Web App — your customers always see the full menu.</p>
+          <div class="lp-venue-card reveal" style="background-image:url('images/venue-2.png')">
+            <span class="material-symbols-outlined lp-venue-icon">local_bar</span>
+            <h3>Bars &amp; Clubs</h3>
+            <p>Drinks orders fly when guests can order from their table. No queue, no shouting, no lost orders at a loud bar.</p>
           </div>
-          <div class="lp-feat reveal">
-            <div class="lp-feat-icon">&#128202;</div>
-            <h3 class="lp-feat-title">Manager analytics</h3>
-            <p class="lp-feat-desc">See what's selling, when orders peak, and which tables are busiest. Real data to run your restaurant better.</p>
+          <div class="lp-venue-card reveal" style="background-image:url('images/venue-3.png')">
+            <span class="material-symbols-outlined lp-venue-icon">auto_awesome</span>
+            <h3>Lounges</h3>
+            <p>Upscale experience, seamless service. Your guests expect sophistication — give them an ordering experience to match.</p>
+          </div>
+          <div class="lp-venue-card reveal" style="background-image:url('images/venue-4.png')">
+            <span class="material-symbols-outlined lp-venue-icon">lunch_dining</span>
+            <h3>Eateries &amp; Canteens</h3>
+            <p>High volume, fast turnaround. Digital menus mean faster decisions, faster orders, faster service — and no paper waste.</p>
           </div>
         </div>
       </div>
@@ -278,7 +342,7 @@
           </div>
         </div>
 
-        <div class="lp-plans lp-plans-3">
+        <div class="lp-plans lp-plans-4">
 
           <!-- Free -->
           <div class="lp-plan reveal">
@@ -334,12 +398,32 @@
               <li class="lp-feat-on">Everything in Growth</li>
               <li class="lp-feat-on">Up to 3 locations</li>
               <li class="lp-feat-on">Unlimited staff accounts</li>
-              <li class="lp-feat-on">Custom QR card design</li>
+              <li class="lp-feat-on">Custom QR card redesign</li>
               <li class="lp-feat-on">Custom feature requests</li>
               <li class="lp-feat-on">Custom management system</li>
               <li class="lp-feat-on">Dedicated priority support</li>
             </ul>
             <a href="mailto:codedbryt@gmail.com?subject=Virtual%20Waitress%20Pro%20Enquiry" class="lp-plan-btn lp-plan-btn-ghost">Contact for Pro</a>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="lp-plan lp-plan-enterprise reveal">
+            <div class="lp-plan-tier">Enterprise</div>
+            <div class="lp-plan-price-row">
+              <span class="lp-plan-amount lp-plan-custom">Custom</span>
+            </div>
+            <p class="lp-plan-cycle">tailored to your operation</p>
+            <ul class="lp-plan-features">
+              <li class="lp-feat-on">4+ locations</li>
+              <li class="lp-feat-on">Fully custom features &amp; integrations</li>
+              <li class="lp-feat-on">Dedicated onboarding &amp; training</li>
+              <li class="lp-feat-on">Custom management system</li>
+              <li class="lp-feat-on">API access</li>
+              <li class="lp-feat-on">Custom branding throughout</li>
+              <li class="lp-feat-on">Website &amp; SEO setup</li>
+              <li class="lp-feat-on">Dedicated account manager</li>
+            </ul>
+            <a href="mailto:codedbryt@gmail.com?subject=Virtual%20Waitress%20Enterprise%20Enquiry" class="lp-plan-btn lp-plan-btn-ghost">Talk to us</a>
           </div>
 
         </div>
@@ -354,9 +438,9 @@
         <div class="lp-cta-inner reveal">
           <img src="images/ada.png" alt="Ada" class="lp-cta-ada" />
           <div class="lp-cta-text">
-            <h2 class="lp-cta-headline">Ready to upgrade your restaurant?</h2>
+            <h2 class="lp-cta-headline">Your competitors are still doing it the old way.<br>That&#8217;s your advantage.</h2>
             <p class="lp-cta-sub">Setup takes less than an hour. Your customers will notice the difference today.</p>
-            <a href="https://app.virtualwaitress.com/signup" class="lp-btn-primary lp-btn-large">Get Your Restaurant Online &#8594;</a>
+            <a href="https://app.virtualwaitress.com/signup" class="lp-btn-primary lp-btn-large">Get Your Venue Online &rarr;</a>
           </div>
         </div>
       </div>
@@ -371,9 +455,10 @@
               <span class="lp-logo-mark">VW</span>
               <span class="lp-logo-word">Virtual Waitress</span>
             </a>
-            <p class="lp-footer-tagline">The digital upgrade your restaurant deserves.</p>
+            <p class="lp-footer-tagline">The digital upgrade your venue deserves.</p>
           </div>
           <nav class="lp-footer-nav">
+            <a href="#problem">Problems we solve</a>
             <a href="#how">How it works</a>
             <a href="#features">Features</a>
             <a href="#pricing">Pricing</a>
@@ -382,7 +467,7 @@
           </nav>
         </div>
         <div class="lp-footer-bottom">
-          <p>&#169; 2025 Virtual Waitress &middot; Built by <a href="https://ngwangwadigital.com" target="_blank" rel="noopener noreferrer">NgwaNgwa Digital</a></p>
+          <p>&#169; 2026 Virtual Waitress &middot; Built by <a href="https://ngwangwadigital.com" target="_blank" rel="noopener noreferrer">NgwaNgwa Digital</a></p>
         </div>
       </div>
     </footer>

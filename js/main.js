@@ -79,3 +79,102 @@ document.querySelectorAll('.lp-cycle-btn').forEach(btn => {
     updatePrices();
   });
 });
+
+// ── Hero Slider ──────────────────────────────────────────────────────────────
+
+const slides      = document.querySelectorAll('.hero-slide');
+const dots        = document.querySelectorAll('.hero-dot');
+const progressBar = document.getElementById('heroProgress');
+const prevBtn     = document.getElementById('heroPrev');
+const nextBtn     = document.getElementById('heroNext');
+
+const SLIDE_DURATION = 10000;
+let currentSlide = 0;
+let autoTimer    = null;
+let progTimer    = null;
+let progStart    = null;
+let progElapsed  = 0;
+
+function goToSlide(index) {
+  slides[currentSlide].classList.remove('active');
+  dots[currentSlide].classList.remove('active');
+  currentSlide = (index + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+}
+
+function startProgress(remaining) {
+  if (progressBar) {
+    const startWidth = ((SLIDE_DURATION - remaining) / SLIDE_DURATION) * 100;
+    progressBar.style.transition = 'none';
+    progressBar.style.width = startWidth + '%';
+    requestAnimationFrame(() => {
+      progressBar.style.transition = `width ${remaining}ms linear`;
+      progressBar.style.width = '100%';
+    });
+  }
+}
+
+function resetProgress() {
+  if (progressBar) {
+    progressBar.style.transition = 'none';
+    progressBar.style.width = '0%';
+  }
+}
+
+function startAuto() {
+  clearTimeout(autoTimer);
+  resetProgress();
+  progStart = Date.now();
+  progElapsed = 0;
+  startProgress(SLIDE_DURATION);
+  autoTimer = setTimeout(() => {
+    goToSlide(currentSlide + 1);
+    startAuto();
+  }, SLIDE_DURATION);
+}
+
+function pauseAuto() {
+  clearTimeout(autoTimer);
+  if (progStart !== null) {
+    progElapsed = Date.now() - progStart;
+  }
+  if (progressBar) {
+    const computed = getComputedStyle(progressBar).width;
+    progressBar.style.transition = 'none';
+    progressBar.style.width = computed;
+  }
+}
+
+function resumeAuto() {
+  const remaining = Math.max(0, SLIDE_DURATION - progElapsed);
+  progStart = Date.now() - progElapsed;
+  startProgress(remaining);
+  autoTimer = setTimeout(() => {
+    goToSlide(currentSlide + 1);
+    startAuto();
+  }, remaining);
+}
+
+if (slides.length) {
+  goToSlide(0);
+  startAuto();
+
+  if (prevBtn) prevBtn.addEventListener('click', () => { goToSlide(currentSlide - 1); startAuto(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { goToSlide(currentSlide + 1); startAuto(); });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => { goToSlide(i); startAuto(); });
+  });
+
+  const slider = document.querySelector('.lp-hero-slider');
+  if (slider) {
+    slider.addEventListener('mouseenter', pauseAuto);
+    slider.addEventListener('mouseleave', resumeAuto);
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft')  { goToSlide(currentSlide - 1); startAuto(); }
+    if (e.key === 'ArrowRight') { goToSlide(currentSlide + 1); startAuto(); }
+  });
+}
