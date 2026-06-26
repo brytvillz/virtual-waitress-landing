@@ -95,12 +95,24 @@ let progTimer    = null;
 let progStart    = null;
 let progElapsed  = 0;
 
+const SLIDE_IMAGES = [
+  null,
+  'images/hero-slide-2.webp',
+  'images/hero-slide-3.webp',
+  'images/hero-slide-4.webp',
+  'images/hero-slide-5.webp',
+];
+
 function goToSlide(index) {
   slides[currentSlide].classList.remove('active');
   dots[currentSlide].classList.remove('active');
   currentSlide = (index + slides.length) % slides.length;
   slides[currentSlide].classList.add('active');
   dots[currentSlide].classList.add('active');
+  const bg = slides[currentSlide].querySelector('.slide-bg');
+  if (bg && SLIDE_IMAGES[currentSlide] && !bg.style.backgroundImage) {
+    bg.style.backgroundImage = `url('${SLIDE_IMAGES[currentSlide]}')`;
+  }
 }
 
 function startProgress(remaining) {

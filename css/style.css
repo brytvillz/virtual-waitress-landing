@@ -530,18 +530,14 @@ body {
   transition: width 0.1s linear;
 }
 
-/* Slide background images — defined in CSS to avoid CSP inline-style violations */
-.slide-1 .slide-bg { background-image: url('../images/hero-slide-1.jpg'); }
-.slide-2 .slide-bg { background-image: url('../images/hero-slide-2.jpg'); }
-.slide-3 .slide-bg { background-image: url('../images/hero-slide-3.jpg'); }
-.slide-4 .slide-bg { background-image: url('../images/hero-slide-4.jpg'); }
-.slide-5 .slide-bg { background-image: url('../images/hero-slide-5.jpg'); }
+/* Slide 1 preloaded immediately; slides 2-5 lazy-loaded by JS on first visit */
+.slide-1 .slide-bg { background-image: url('../images/hero-slide-1.webp'); }
 
 /* Venue card background images */
-.lp-venue-1 { background-image: url('../images/venue-1.png'); }
-.lp-venue-2 { background-image: url('../images/venue-2.png'); }
-.lp-venue-3 { background-image: url('../images/venue-3.png'); }
-.lp-venue-4 { background-image: url('../images/venue-4.png'); }
+.lp-venue-1 { background-image: url('../images/venue-1.webp'); }
+.lp-venue-2 { background-image: url('../images/venue-2.webp'); }
+.lp-venue-3 { background-image: url('../images/venue-3.webp'); }
+.lp-venue-4 { background-image: url('../images/venue-4.webp'); }
 
 /* Eyebrow inline icon */
 .eyebrow-icon {
@@ -597,7 +593,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('../images/section-pain.png');
+  background-image: url('../images/section-pain.webp');
   background-size: cover;
   background-position: center top;
   opacity: 0.07;
@@ -669,7 +665,7 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('../images/section-how.png');
+  background-image: url('../images/section-how.webp');
   background-size: cover;
   background-position: center;
   opacity: 0.06;
