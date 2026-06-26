@@ -263,47 +263,87 @@
       <div class="lp-container">
         <div class="lp-section-tag">Pricing</div>
         <h2 class="lp-section-headline reveal">Simple, honest pricing</h2>
-        <p class="lp-section-sub reveal">Start free. Upgrade when your restaurant is ready to scale.</p>
-        <div class="lp-plans">
+        <p class="lp-section-sub reveal">Start free. Upgrade when your business is ready to grow.</p>
+
+        <!-- Controls -->
+        <div class="lp-pricing-controls reveal">
+          <div class="lp-currency-toggle">
+            <button class="lp-currency-btn active" data-currency="ngn">&#8358; NGN</button>
+            <button class="lp-currency-btn" data-currency="usd">$ USD</button>
+          </div>
+          <div class="lp-cycle-tabs">
+            <button class="lp-cycle-btn active" data-cycle="monthly">Monthly</button>
+            <button class="lp-cycle-btn" data-cycle="6month">6 Months <span class="lp-save-badge">Save 4%</span></button>
+            <button class="lp-cycle-btn" data-cycle="annual">12 Months <span class="lp-save-badge">Save 18%</span></button>
+          </div>
+        </div>
+
+        <div class="lp-plans lp-plans-3">
+
+          <!-- Free -->
           <div class="lp-plan reveal">
             <div class="lp-plan-tier">Starter</div>
             <div class="lp-plan-price-row">
-              <span class="lp-plan-currency">&#8358;</span>
+              <span class="lp-plan-currency lp-price-sym">&#8358;</span>
               <span class="lp-plan-amount">0</span>
             </div>
             <p class="lp-plan-cycle">Free forever</p>
             <ul class="lp-plan-features">
               <li class="lp-feat-on">Up to 5 tables</li>
               <li class="lp-feat-on">Digital menu (up to 20 items)</li>
-              <li class="lp-feat-on">Customer ordering</li>
-              <li class="lp-feat-on">Basic waiter dashboard</li>
-              <li class="lp-feat-off">Custom branding</li>
-              <li class="lp-feat-off">Sales analytics</li>
-              <li class="lp-feat-off">Staff management</li>
+              <li class="lp-feat-on">Customer ordering &amp; waiter calls</li>
+              <li class="lp-feat-on">1 staff account</li>
+              <li class="lp-feat-off">Analytics &amp; best sellers</li>
+              <li class="lp-feat-off">Web push notifications</li>
+              <li class="lp-feat-off">Remove Virtual Waitress branding</li>
             </ul>
             <a href="https://app.virtualwaitress.com/signup" class="lp-plan-btn lp-plan-btn-ghost">Get Started Free</a>
           </div>
-          <div class="lp-plan lp-plan-pro reveal">
+
+          <!-- Growth -->
+          <div class="lp-plan lp-plan-growth reveal">
             <div class="lp-plan-popular">Most Popular</div>
+            <div class="lp-plan-tier">Growth</div>
+            <div class="lp-plan-price-row">
+              <span class="lp-plan-currency lp-price-sym">&#8358;</span>
+              <span class="lp-plan-amount" id="priceGrowth">4,900</span>
+            </div>
+            <p class="lp-plan-cycle" id="cycleGrowth">per month</p>
+            <ul class="lp-plan-features">
+              <li class="lp-feat-on">Unlimited tables &amp; menu items</li>
+              <li class="lp-feat-on">Up to 5 staff accounts</li>
+              <li class="lp-feat-on">Full analytics &amp; best sellers</li>
+              <li class="lp-feat-on">Waiter performance tracking</li>
+              <li class="lp-feat-on">Web push notifications</li>
+              <li class="lp-feat-on">QR card printing</li>
+              <li class="lp-feat-on">Priority support</li>
+              <li class="lp-feat-on">Remove Virtual Waitress branding</li>
+            </ul>
+            <a href="https://app.virtualwaitress.com/signup" class="lp-plan-btn lp-plan-btn-pro">Get Growth</a>
+          </div>
+
+          <!-- Pro -->
+          <div class="lp-plan reveal">
             <div class="lp-plan-tier">Pro</div>
             <div class="lp-plan-price-row">
-              <span class="lp-plan-currency">&#8358;</span>
-              <span class="lp-plan-amount">15,000</span>
+              <span class="lp-plan-currency lp-price-sym">&#8358;</span>
+              <span class="lp-plan-amount" id="pricePro">15,000</span>
             </div>
-            <p class="lp-plan-cycle">per month</p>
+            <p class="lp-plan-cycle" id="cyclePro">per month</p>
             <ul class="lp-plan-features">
-              <li class="lp-feat-on">Unlimited tables</li>
-              <li class="lp-feat-on">Unlimited menu items</li>
-              <li class="lp-feat-on">Customer ordering</li>
-              <li class="lp-feat-on">Full waiter dashboard</li>
-              <li class="lp-feat-on">Custom branding &amp; colours</li>
-              <li class="lp-feat-on">Sales analytics</li>
-              <li class="lp-feat-on">Full staff management</li>
+              <li class="lp-feat-on">Everything in Growth</li>
+              <li class="lp-feat-on">Up to 3 locations</li>
+              <li class="lp-feat-on">Unlimited staff accounts</li>
+              <li class="lp-feat-on">Custom QR card design</li>
+              <li class="lp-feat-on">Custom feature requests</li>
+              <li class="lp-feat-on">Custom management system</li>
+              <li class="lp-feat-on">Dedicated priority support</li>
             </ul>
-            <a href="mailto:codedbryt@gmail.com?subject=Virtual%20Waitress%20Pro%20%E2%80%94%20Enquiry" class="lp-plan-btn lp-plan-btn-pro">Get Pro Access</a>
+            <a href="mailto:codedbryt@gmail.com?subject=Virtual%20Waitress%20Pro%20Enquiry" class="lp-plan-btn lp-plan-btn-ghost">Contact for Pro</a>
           </div>
+
         </div>
-        <p class="lp-pricing-note">Want to talk first? WhatsApp us at <strong>+234 707 607 7265</strong></p>
+        <p class="lp-pricing-note">Questions? WhatsApp us at <strong>+234 707 607 7265</strong></p>
       </div>
     </section>
 
