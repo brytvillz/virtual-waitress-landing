@@ -867,7 +867,7 @@ body {
 
 .lp-venue-card {
   padding: 32px 24px;
-  background: var(--lp-bg);
+  background-color: var(--lp-bg);
   background-size: cover;
   background-position: center;
   border: 1px solid var(--lp-border);
