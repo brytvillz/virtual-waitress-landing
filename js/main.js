@@ -31,12 +31,23 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
 const PRICES = {
   growth: {
-    ngn: { monthly: '4,900', '6month': '4,700', annual: '4,000' },
+    ngn: { monthly: '4,900', '6month': '4,000', annual: '3,500' },
     usd: { monthly: '5',     '6month': '4.50',  annual: '4'     },
   },
   pro: {
     ngn: { monthly: '15,000', '6month': '14,700', annual: '13,500' },
     usd: { monthly: '12',     '6month': '11',      annual: '10'    },
+  },
+};
+
+const TOTALS = {
+  growth: {
+    ngn: { '6month': '24,000', annual: '42,000' },
+    usd: { '6month': '27',     annual: '48'     },
+  },
+  pro: {
+    ngn: { '6month': '88,200', annual: '162,000' },
+    usd: { '6month': '66',     annual: '120'     },
   },
 };
 
@@ -46,20 +57,32 @@ const CYCLE_LABEL = {
   annual:   'per month, billed annually',
 };
 
+const TOTAL_LABEL = {
+  '6month': 'total billed every 6 months',
+  annual:   'total billed annually',
+};
+
 let activeCurrency = 'ngn';
 let activeCycle    = 'monthly';
 
 function updatePrices() {
   const sym = activeCurrency === 'ngn' ? '₦' : '$';
   document.querySelectorAll('.lp-price-sym').forEach(el => el.textContent = sym);
-  const gEl = document.getElementById('priceGrowth');
-  const pEl = document.getElementById('pricePro');
+  const gEl  = document.getElementById('priceGrowth');
+  const pEl  = document.getElementById('pricePro');
   const gcEl = document.getElementById('cycleGrowth');
   const pcEl = document.getElementById('cyclePro');
-  if (gEl) gEl.textContent = PRICES.growth[activeCurrency][activeCycle];
-  if (pEl) pEl.textContent = PRICES.pro[activeCurrency][activeCycle];
+  const gtEl = document.getElementById('totalGrowth');
+  const ptEl = document.getElementById('totalPro');
+
+  if (gEl)  gEl.textContent  = PRICES.growth[activeCurrency][activeCycle];
+  if (pEl)  pEl.textContent  = PRICES.pro[activeCurrency][activeCycle];
   if (gcEl) gcEl.textContent = CYCLE_LABEL[activeCycle];
   if (pcEl) pcEl.textContent = CYCLE_LABEL[activeCycle];
+
+  const showTotal = activeCycle !== 'monthly';
+  if (gtEl) gtEl.textContent = showTotal ? sym + TOTALS.growth[activeCurrency][activeCycle] + ' ' + TOTAL_LABEL[activeCycle] : '';
+  if (ptEl) ptEl.textContent = showTotal ? sym + TOTALS.pro[activeCurrency][activeCycle]    + ' ' + TOTAL_LABEL[activeCycle] : '';
 }
 
 document.querySelectorAll('.lp-currency-btn').forEach(btn => {
