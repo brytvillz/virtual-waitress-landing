@@ -530,6 +530,26 @@ body {
   transition: width 0.1s linear;
 }
 
+/* Slide background images — defined in CSS to avoid CSP inline-style violations */
+.slide-1 .slide-bg { background-image: url('../images/hero-slide-1.jpg'); }
+.slide-2 .slide-bg { background-image: url('../images/hero-slide-2.jpg'); }
+.slide-3 .slide-bg { background-image: url('../images/hero-slide-3.jpg'); }
+.slide-4 .slide-bg { background-image: url('../images/hero-slide-4.jpg'); }
+.slide-5 .slide-bg { background-image: url('../images/hero-slide-5.jpg'); }
+
+/* Venue card background images */
+.lp-venue-1 { background-image: url('../images/venue-1.png'); }
+.lp-venue-2 { background-image: url('../images/venue-2.png'); }
+.lp-venue-3 { background-image: url('../images/venue-3.png'); }
+.lp-venue-4 { background-image: url('../images/venue-4.png'); }
+
+/* Eyebrow inline icon */
+.eyebrow-icon {
+  font-size: 0.9rem;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
 /* ──────────────────────────────────────────────
    SECTION SHARED
 ────────────────────────────────────────────── */
